@@ -1,9 +1,16 @@
 %nav.navbar.navbar-default
 	%div.container-fluid
 		%div.navbar-header
-			%span.navbar-brand Coacheye
+			%span.navbar-brand 
+				Coach 
+				%span.glyphicon.glyphicon-eye-open
+				eye
 		%ul.nav.navbar-nav.navbar-right
 			%li  
-				=link_to root_path, class: 'btn btn-default' do
+				=link_to root_path do
 					%span.glyphicon.glyphicon-home
-					%b Home	
+					%b Home
+			%li  
+				=link_to about_path do
+					%span.glyphicon.glyphicon-home
+					%b About		

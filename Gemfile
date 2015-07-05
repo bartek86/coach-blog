@@ -17,6 +17,8 @@ gem 'simple_form', '~> 3.1.0'
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'devise', '~> 3.5.1'
 
+gem 'coffee-script-source', '1.8.0'
+
 group :development, :test do
   
   gem 'byebug'

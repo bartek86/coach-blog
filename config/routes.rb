@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 
   root "pages#home"
 
-  get '/home', to: 'pages#about'
-
+  get '/home', to: 'pages#home'
+  get '/about', to: 'pages#about'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

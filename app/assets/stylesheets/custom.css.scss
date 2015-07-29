@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-$maintxt: #FFFFFF;
+$maintxt: #000;
 
 html {
 	height: 100%;
@@ -9,11 +9,12 @@ html {
 
 body{
 
-  background: -webkit-linear-gradient(90deg, #003973 10%, #E5E5BE 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #003973 10%, #E5E5BE 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #003973 10%, #E5E5BE 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #003973 10%, #E5E5BE 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #003973 10%, #E5E5BE 90%); /* W3C */
+  background: -webkit-linear-gradient(90deg, #DAE2F8 10%, #D6A4A4 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #DAE2F8 10%, #D6A4A4 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #DAE2F8 10%, #D6A4A4 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #DAE2F8 10%, #D6A4A4 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #DAE2F8 10%, #D6A4A4 90%); /* W3C */
+        
         
   color: $maintxt;            
 }
@@ -50,7 +51,7 @@ body{
   	text-decoration:none;
 		display: block;
 		
-		background: rgba(0, 57, 115, 0.5);
+		background: rgba(218, 226, 248, 0.7);
 		padding:5px 21px;
 		color:#eee;
 		float:left;
@@ -62,7 +63,7 @@ body{
   }
 
   li a:hover {
-  	background:#E5E5BE !important;
+  	background: rgba(214, 164, 164, 1) !important;
 		color:#003973 !important;
 		border-top:2px solid #003973 !important;
 		border-right:2px solid #003973 !important;

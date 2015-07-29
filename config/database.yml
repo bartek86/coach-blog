@@ -19,12 +19,12 @@ default: &default
   encoding: unicode
 
   pool: 5
-  user: myapp
-  password: samolot
+  user: ubuntu
+  password: 
 
 development:
   <<: *default
-  database: coacheye_development
+  database: coachblog_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,7 +58,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: coacheye_test
+  database: coachblog_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: coacheye_production
-  username: coacheye
+  database: coachblog_production
+  username: coachblog
   password: <%= ENV['COACHEYE_DATABASE_PASSWORD'] %>

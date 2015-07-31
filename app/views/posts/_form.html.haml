@@ -1,0 +1,8 @@
+%div
+  = simple_form_for @post do |f|
+    = f.input :title, label: "Tytuł"
+    = f.input :content, label: "Treść"
+    
+    %br/
+    
+    = f.button :submit, "Zapisz post", class: 'btn btn-primary'

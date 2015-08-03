@@ -2,6 +2,8 @@ class WorkoutsController < ApplicationController
   
   def index
     @workouts = Workout.all
+    @workouts_by_date = @workouts.group_by(&:date) 
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
   end
   
   def show
@@ -44,6 +46,6 @@ class WorkoutsController < ApplicationController
   private
     
     def workouts_params
-      params.require(:workout).permit(:date, :type, :time, :mood)
+      params.require(:workout).permit(:title, :date, :time, :mood)
     end
 end

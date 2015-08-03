@@ -19,6 +19,8 @@ gem 'devise', '~> 3.5.1'
 
 gem 'coffee-script-source', '1.8.0'
 
+gem 'jquery-ui-rails'
+
 group :development, :test do
 
 	gem 'better_errors'

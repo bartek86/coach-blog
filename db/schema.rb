@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20150731114403) do
   end
 
   create_table "workouts", force: :cascade do |t|
-    t.string   "type"
+    t.string   "title"
     t.date     "date"
     t.integer  "time"
     t.string   "mood"

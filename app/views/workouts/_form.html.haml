@@ -1,8 +1,10 @@
 %div
-  = simple_form_for @post do |f|
-    = f.input :title, label: "Tytuł"
-    = f.input :content, label: "Treść"
+  = simple_form_for @workout do |f|
+    = f.input :title, label: "Typ treningu"
+    = f.input :date, label: "Data"
+    = f.input :time, label: "Czas treningu"
+    = f.input :mood, label: "Nastrój"
     
     %br/
     
-    = f.button :submit, "Zapisz post", class: 'btn btn-primary'
+    = f.button :submit, "Zapisz trening", class: 'btn btn-primary'

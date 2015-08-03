@@ -1,0 +1,20 @@
+<%= form_for @workout do |f| %>
+  <div class="field">
+    <%= f.label "Rodzaj treningu" %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label "Data treningu" %><br />
+    <%= f.text_field :date %>
+  </div>
+    <div class="field">
+    <%= f.label "Czas treningu" %><br />
+    <%= f.text_field :time %>
+  </div>
+    <div class="field">
+    <%= f.label "Nastrój" %><br />
+    <%= f.text_field :mood %>
+  </div>
+  <br />
+  <%= f.submit "Zapisz trening", class: "btn btn-primary" %>
+<% end %>

@@ -3,4 +3,4 @@
 App created to support fitness personal coach.
 Features:
   - blog
-  - workout calendar
+  - workout calendar ( based on Railscasts PRO #213 )
